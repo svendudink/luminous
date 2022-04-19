@@ -7,6 +7,7 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
+import About from "./views/About";
 
 function App() {
   return <div className="App"></div>;
