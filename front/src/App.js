@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import About from "./views/About";
 import Home from "./views/Home";
+import Controller from "./views/Controller";
 
 function App() {
   return <div className="App"></div>;
