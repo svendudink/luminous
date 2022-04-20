@@ -10,6 +10,7 @@ import {
 import About from "./views/About";
 import Home from "./views/Home";
 import Controller from "./views/Controller";
+import Showroom from "./views/Showroom";
 
 function App() {
   return <div className="App"></div>;
