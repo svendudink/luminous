@@ -13,7 +13,7 @@ import Controller from "./views/Controller";
 import Showroom from "./views/Showroom";
 
 function App() {
-  return <div className="App"></div>;
+  return <div></div>;
 }
 
 export default App;
