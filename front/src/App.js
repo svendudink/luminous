@@ -13,7 +13,11 @@ import Controller from "./views/Controller";
 import Showroom from "./views/Showroom";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <BrowserRouter></BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
