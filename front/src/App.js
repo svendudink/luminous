@@ -15,7 +15,9 @@ import Showroom from "./views/Showroom";
 function App() {
   return (
     <div>
-      <BrowserRouter></BrowserRouter>
+      <BrowserRouter>
+        <Routes></Routes>
+      </BrowserRouter>
     </div>
   );
 }
