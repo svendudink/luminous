@@ -18,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/About" element={<About />} />
+          <Route path="/Showroom" element={<Showroom />} />
         </Routes>
       </BrowserRouter>
     </div>
