@@ -16,7 +16,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Routes></Routes>
+        <Routes>
+          <Route path="/About" element={<About />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
