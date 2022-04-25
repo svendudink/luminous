@@ -1,3 +1,3 @@
 export default function Showroom() {
-  return <div></div>;
+  return <div>Showroom text</div>;
 }
