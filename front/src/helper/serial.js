@@ -2,5 +2,5 @@
 //import { simpleGit, SimpleGit, CleanOptions } from "simple-git";
 
 export const serial = () => {
-  console.log("checkvalue");
+  console.log("checkvalues modded");
 };
