@@ -1,3 +1,3 @@
 export default function Controller() {
-  return <div></div>;
+  return <div>Text</div>;
 }
