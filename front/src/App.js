@@ -5,12 +5,14 @@ import About from "./views/About";
 import Home from "./views/Home";
 import Controller from "./views/Controller";
 import Showroom from "./views/Showroom";
+import Main from "./views/Main";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route path="/About" element={<About />} />
           <Route path="/Showroom" element={<Showroom />} />
           <Route path="/Home" element={<Home />} />
