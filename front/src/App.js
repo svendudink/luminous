@@ -1,26 +1,21 @@
 import "./App.css";
-import { serial } from "./helper/serial";
+
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import About from "./views/About";
-import Home from "./views/Home";
-import Controller from "./views/Controller";
-import Showroom from "./views/Showroom";
+// import Home from "./views/Home";
+// import Controller from "./views/Controller";
+// import Showroom from "./views/Showroom";
 import Main from "./views/Main";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div>
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/*" element={<Main />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Showroom" element={<Showroom />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Controller" element={<Controller />} />
+          <Route path="/Main" element={<Main />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
