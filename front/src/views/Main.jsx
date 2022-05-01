@@ -1,8 +1,8 @@
 import { useImagePreloader } from "../hooks/preLoadImage";
-import { preloadSrcList } from "../media/backgrounds/imageLoad/imageArray";
+import { preloadSrcList } from "../media/imageLoad/imageArray";
 
 export default function Main() {
-  const preLoad = useImagePreloader(preloadSrcList).percentage;
+  const preLoad = useImagePreloader(preloadSrcList).imagesPreloaded;
 
   return <div>Main</div>;
 }
