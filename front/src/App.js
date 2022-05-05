@@ -15,6 +15,7 @@ function App() {
           <Route path="/Main" element={<Main />} />
           <Route path="/Showroom" element={<Showroom />} />
           <Route path="/Controller" element={<Controller />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>
