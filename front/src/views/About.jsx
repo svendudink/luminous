@@ -3,12 +3,12 @@ import { useContext, useEffect } from "react";
 // import { AboutStory } from "../media/Storys/Storys";
 
 const About = () => {
-  //   const { setActivePage } = useContext(GlobalContext);
+  // const { setActivePage } = useContext(GlobalContext);
 
-  //   useEffect(() => {
-  //     setActivePage("about");
-  //     document.title = "Bottle Luminous: About";
-  //   });
+  // useEffect(() => {
+  //   setActivePage("about");
+  //   document.title = "Bottle Luminous: About";
+  // });
 
   return <div className="about">{/* <AboutStory /> */}</div>;
 };
