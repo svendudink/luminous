@@ -1,7 +1,22 @@
+import { useState } from "react";
 
-const Storys = (props) => { 
+
+export const Storys = (props) => { 
 
     const [textColor, setTextColor] = useState("#195B8E");
-const storyArray = { color: textColor, story: };
+const storyArray = [
+  {
+        color: textColor,
+      storyName:
+    story: `Bottle Luminous has a total of 132 Bottles, all connected over a
+        Blueooth MESH network.`,
+  },
+  {
+    color: textColor,
+    story: `Bottle Luminous has a total of 132 Bottles, all connected over a
+        Blueooth MESH network.`,
+  },
+];
 
 }
+
