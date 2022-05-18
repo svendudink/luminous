@@ -20,5 +20,18 @@ export const Storys = (props) => {
       storyName: "lamp2",
       story: `Completely waterproof as bulbs are sealed inside glass`,
     },
+    {
+      color: textColor,
+      storyName: "lamp3",
+      story: `<div
+        style={{ color: textColor }}
+        onMouseLeave={() => setLampBackground("startPagewhitea")}
+      >
+        <p1> 16.7 Million colours to choose from, try a few </p1>
+        <Button onClick={() => setLampBackground("lamp3b")}>Red</Button>
+        <Button onClick={() => setLampBackground("lamp3d")}>Yellow</Button>
+        <Button onClick={() => setLampBackground("lamp3c")}>Blue</Button>
+      </div>`,
+    },
   ];
 };
