@@ -47,7 +47,7 @@ export const Storys = (props) => {
         this will be the first step setting up a light event`,
     },
     {
-      storyName: "mapManager",
+      storyName: "colors",
       color: "black",
       story: `Select a map to change the colors or<br></br>
         Create your own event map <br></br>
@@ -56,9 +56,22 @@ export const Storys = (props) => {
     {
       storyName: "mapManager",
       color: "bulbId",
-      story: `Select a map to change the colors or<br></br>
-        Create your own event map <br></br>
-        this will be the first step setting up a light event`,
+      story: ` Every Lamp has its own Bulb ID.
+        <br /> on the neck of the lamp you can find a QR code,
+        <br /> scan the QR code or select the bulb manually, <br />
+        this is done so the software knows
+        <br /> where your bulb is placed and when to <br />
+        perform the action requested`,
+    },
+    {
+      storyName: "mapManager",
+      color: "bulbId",
+      story: ` Every Lamp has its own Bulb ID.
+        <br /> on the neck of the lamp you can find a QR code,
+        <br /> scan the QR code or select the bulb manually, <br />
+        this is done so the software knows
+        <br /> where your bulb is placed and when to <br />
+        perform the action requested`,
     },
   ];
 };
