@@ -49,13 +49,17 @@ export const Storys = (props) => {
     {
       storyName: "colors",
       color: "black",
-      story: `Select a map to change the colors or<br></br>
-        Create your own event map <br></br>
-        this will be the first step setting up a light event`,
+      story: ` Select different colors, <br></br>if no colors are selected,
+        <br /> its will pick a random color,
+        <br /> if one color is selected,
+        <br /> it will remain on that color,
+        <br /> if multiple colors are selected
+        <br /> it will randomly rotate
+        <br /> in between the colors selected`,
     },
     {
-      storyName: "mapManager",
-      color: "bulbId",
+      storyName: "bulbId",
+      color: "black",
       story: ` Every Lamp has its own Bulb ID.
         <br /> on the neck of the lamp you can find a QR code,
         <br /> scan the QR code or select the bulb manually, <br />
