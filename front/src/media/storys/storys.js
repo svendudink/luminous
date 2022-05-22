@@ -68,14 +68,43 @@ export const Storys = (props) => {
         perform the action requested`,
     },
     {
-      storyName: "mapManager",
-      color: "bulbId",
+      storyName: "googleMap",
+      color: "black",
       story: ` Every Lamp has its own Bulb ID.
         <br /> on the neck of the lamp you can find a QR code,
         <br /> scan the QR code or select the bulb manually, <br />
         this is done so the software knows
         <br /> where your bulb is placed and when to <br />
         perform the action requested`,
+    },
+    {
+      storyName: "addLamp",
+      color: "black",
+      story: ` Add new Lamp: Add a lamp and it will be visible on the map,
+        <br />
+        Add before selected lamp: there will always be chronoligical order,{" "}
+        <br />
+        this makes it possible to add a lamp later without deleting a bunch of
+        lights
+        <br />
+        Delete selected Lamp: this will delete the selected and move all
+        <br />
+        numbers down by one to keepthe chronological order <br /> Vertical and
+        horizontal scan: have the lights move from left to right or from up to
+        <br />
+        down`,
+    },
+    {
+      storyName: "video",
+      color: "black",
+      story: `this is a live video stream of 11 of the 132 bluetooth <br />
+        lamps i made for events
+        <br />
+        the video stops after 4 minutes to keep the stress on the server low,
+        <br />
+        the video might be laggy, this is because it runs on a Ebay
+        <br />
+        kleinanzeigen purchased broken 25 euro laptop`,
     },
   ];
 };
