@@ -106,5 +106,17 @@ export const Storys = (props) => {
         <br />
         kleinanzeigen purchased broken 25 euro laptop`,
     },
+    {
+      storyName: "eventControl",
+      color: "black",
+      story: `this is a live video stream of 11 of the 132 bluetooth <br />
+        lamps i made for events
+        <br />
+        the video stops after 4 minutes to keep the stress on the server low,
+        <br />
+        the video might be laggy, this is because it runs on a Ebay
+        <br />
+        kleinanzeigen purchased broken 25 euro laptop`,
+    },
   ];
 };
