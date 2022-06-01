@@ -1,3 +1,4 @@
+import React from "react";
 import { useContext, useEffect } from "react";
 // import { GlobalContext } from "../components/context/GlobalContext";
 import { AboutStory } from "../media/Storys/Storys";
