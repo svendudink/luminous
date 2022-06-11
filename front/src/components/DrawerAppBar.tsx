@@ -14,7 +14,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { UserContext } from "./context/UserContext";
+import { UserContext } from "../context/UserContext";
 
 import { useState, useEffect, useContext } from "react";
 
