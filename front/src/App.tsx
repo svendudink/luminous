@@ -7,10 +7,12 @@ import Home from "./views/Home";
 import Controller from "./views/Controller";
 import Showroom from "./views/Showroom";
 import Main from "./views/Main";
+import DrawerAppBar from "./components/DrawerAppBar";
 
 function App() {
   return (
     <BrowserRouter>
+      <DrawerAppBar />
       <div>
         <Routes>
           <Route path="/Home" element={<Home />} />
