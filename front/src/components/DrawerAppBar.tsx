@@ -14,39 +14,12 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { UserContext } from "../context/UserContext";
 
 import { useState, useEffect, useContext } from "react";
 
 const drawerWidth = 240;
 
 export default function DrawerAppBar(props) {
-  const { loggedIn, setLoggedIn, setMessages } = useContext(UserContext);
-
-  const [navItems, setNavItems] = useState([
-    "Home",
-    "Live video demo and device control",
-    "Create event map",
-    "about this project",
-    "Showroom",
-    "Contact",
-    loggedIn ? "Logout" : "Login or create a user",
-  ]);
-
-  useEffect(() => {
-    setNavItems([
-      "Home",
-      "Live video demo and device control",
-      "Create event map",
-      "about this project",
-      "Showroom",
-      "Contact",
-      loggedIn ? "Logout" : "Login or create a user",
-    ]);
-
-    if (loggedIn) navigate("/BasicController");
-  }, [loggedIn]);
-
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const navigate = useNavigate();
@@ -69,12 +42,14 @@ export default function DrawerAppBar(props) {
   const handleDrawerToggle = (event) => {
     setMobileOpen(!mobileOpen);
   };
-
-  const logout = () => {
-    localStorage.removeItem("token");
-    setMessages("");
-    setLoggedIn(false);
-  };
+  const navItems = [
+    { name: "Home", link: "/Home" },
+    { name: "Live video demo and device control", link: "/BasicController" },
+    { name: "Create event map", link: "/CreateMapping" },
+    { name: "about this project", link: "/About" },
+    { name: "Showroom", link: "/Showroom" },
+    { name: "Contact", link: "/contact" },
+  ];
 
   const handleClick = (event) => {
     if (event === navItems[0]) {
@@ -96,9 +71,6 @@ export default function DrawerAppBar(props) {
     if (event === navItems[5]) {
       navigate("/contact");
     }
-    if (event === navItems[6]) {
-      loggedIn ? logout() : navigate("/LoginCreateUser");
-    }
   };
 
   const drawer = (
@@ -108,13 +80,15 @@ export default function DrawerAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {navItems.map((item) => {
+          return (
+            <ListItem key={item.name} disablePadding>
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText primary={item.name} />
+              </ListItemButton>
+            </ListItem>
+          );
+        })}
       </List>
     </Box>
   );
@@ -151,15 +125,17 @@ export default function DrawerAppBar(props) {
                 display: { xs: "none", sm: "block" },
               }}
             >
-              {navItems.map((item) => (
-                <Button
-                  onClick={() => handleClick(item)}
-                  key={item}
-                  sx={{ color: "#fff" }}
-                >
-                  {item}
-                </Button>
-              ))}
+              {navItems.map((item) => {
+                return (
+                  <Button
+                    onClick={() => navigate(item.link)}
+                    key={item.name}
+                    sx={{ color: "#fff" }}
+                  >
+                    {item.name}
+                  </Button>
+                );
+              })}
             </Box>
           </Toolbar>
         </AppBar>
