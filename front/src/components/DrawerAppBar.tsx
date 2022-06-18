@@ -15,10 +15,6 @@ import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-import { useState, useEffect, useContext } from "react";
-
-const drawerWidth = 240;
-
 export default function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -50,28 +46,6 @@ export default function DrawerAppBar(props) {
     { name: "Showroom", link: "/Showroom" },
     { name: "Contact", link: "/contact" },
   ];
-
-  const handleClick = (event) => {
-    if (event === navItems[0]) {
-      navigate("/Home");
-    }
-
-    if (event === navItems[1]) {
-      navigate("/BasicController");
-    }
-    if (event === navItems[2]) {
-      navigate("/CreateMapping");
-    }
-    if (event === navItems[3]) {
-      navigate("/About");
-    }
-    if (event === navItems[4]) {
-      navigate("/Showroom");
-    }
-    if (event === navItems[5]) {
-      navigate("/contact");
-    }
-  };
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -152,7 +126,7 @@ export default function DrawerAppBar(props) {
               display: { xs: "block", sm: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
-                width: drawerWidth,
+                width: 240,
               },
             }}
           >
