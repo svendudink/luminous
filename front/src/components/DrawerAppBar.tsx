@@ -35,7 +35,7 @@ export default function DrawerAppBar(props) {
     },
   });
 
-  const handleDrawerToggle = (event) => {
+  const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
   const navItems = [
