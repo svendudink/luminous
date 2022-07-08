@@ -12,16 +12,18 @@ import DrawerAppBar from "./components/DrawerAppBar";
 function App() {
   return (
     <BrowserRouter>
-      <DrawerAppBar />
-      <div>
-        <Routes>
-          <Route path="/Home" element={<Home />} />
-          {/* <Route path="/Main" element={<Main />} /> */}
-          <Route path="/Showroom" element={<Showroom />} />
-          <Route path="/Controller" element={<Controller />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
+      <GlobalContextProvider>
+        <DrawerAppBar />
+        <div>
+          <Routes>
+            <Route path="/Home" element={<Home />} />
+            {/* <Route path="/Main" element={<Main />} /> */}
+            <Route path="/Showroom" element={<Showroom />} />
+            <Route path="/Controller" element={<Controller />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </GlobalContextProvider>
     </BrowserRouter>
   );
 }
