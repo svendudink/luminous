@@ -7,7 +7,7 @@ function App() {
       <button
         onClick={() => {
           serial();
-          console.log("testrun6");
+          console.log("testrun7");
         }}
         style={{ position: "fixed", zIndex: "1000", paddingTop: "60px" }}
       >
